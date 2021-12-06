@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+table, td, th {
+border: 1px solid black;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+td {
+height: 50px;
+vertical-align: bottom;
+}
+ i{
+    padding:15px;
+
+
+ }
+   .Row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column {
+    display: table-cell;
+   /* background-color: red; /*Optional*/*/
+
+
+}
+.pagination {
+  display: inline-block;
+  margin-left: 1050px;
+  margin-top: 20px;
+
+}
+
+.pagination a {
+  color: black;
+  float:left;
+  padding: 8px 11px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #52caf2;
+  color: white;
+  border-radius:90px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 100px;
+}
+
+</style>
+</head>
+<body style="">
+
+<div class="Row">
+    <div class="Column"><p> Show<select>
+  <option>5</option> 
+ </select>entries</p></div>
+    <div class="Column"><h1 > Customer Details</h1></div>
+    <div class="Column"><i class="fa fa-search" aria-hidden="true"> <input type="" name="" placeholder="Search"></i>
+ </div>
+</div>
+
+ <!-- <h1 style="text-align: center;"> Customer Details</h1>
+   <p> Show<select>
+  <option>5</option> 
+ </select>entries</p>
+ <i style="position:relative;
+ width:140px;bottom: 65px;left: 70%" class="fa fa-search" aria-hidden="true"> search</i>
+  -->
+
+<table>
+ 
+
+<tr>
+<th>#</th>
+<th>NAME<i class="fa fa-sort"></i></th>
+<th>ADDRESS</th>
+<th>CITY<i class="fa fa-sort"></i></th>
+<th>PINCODE</th>
+<th>COUNTRY<i class="fa fa-sort"></i></th>
+<th>ACTION</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Thomas Hardy</td>
+<td>89 chiarsco rd</td>
+<td>Portland</td>
+<td>97219</td>
+<td>usa</td>
+<td>
+      <i style="color: #00e5ff" class="fa fa-eye"></i>   
+      <i style="color: yellow" class="fa fa-edit"></i>   
+      <i style="color: red" class="fa fa-trash"></i> 
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Maria Anders</td>
+<td>obere str</td>
+<td>berlin</td>
+<td>12209</td>
+<td>Germany</td>
+<td>
+     <i style="color: #00e5ff" class="fa fa-eye"></i>   
+      <i style="color: yellow" class="fa fa-edit"></i>   
+      <i style="color: red" class="fa fa-trash"></i> 
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Fran wilson</td>
+<td>C arquil </td>
+<td>Madrid</td>
+<td>28023</td>
+<td>spain</td>
+<td>
+     <i style="color: #00e5ff ;" class="fa fa-eye"></i>   
+      <i style="color: yellow" class="fa fa-edit"></i>   
+      <i style="color: red" class="fa fa-trash"></i>  
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Dominque perrier</td>
+<td>25 rue Lauristion</td>
+<td>Paris</td>
+<td>75106</td>
+<td>france</td>
+<td>
+     <i style="color: #00e5ff" class="fa fa-eye"></i>   
+      <i style="color: yellow" class="fa fa-edit"></i>   
+      <i style="color: red" class="fa fa-trash"></i> 
+</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Martin blank</td>
+<td>via monte Bianco</td>
+<td>Turin</td>
+<td>10100</td>
+<td>italy</td>
+<td>
+     <i style="color: #00e5ff" class="fa fa-eye"></i>   
+      <i style="color: yellow" class="fa fa-edit"></i>   
+      <i style="color: red" class="fa fa-trash"></i> 
+</td>
+</table>
+<a style="margin:10px;">show <b>5</b> out of <b>25</b> enteries</a>
+<div class="pagination">
+   <a href="#">previous</a> 
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#" class="active">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">next</a>
+  
+  
+</div>
+
+</body>
+</html>
